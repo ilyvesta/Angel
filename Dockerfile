@@ -14,10 +14,10 @@ COPY requirements.txt /requirements.txt
 RUN pip3 install -U pip && pip3 install -U -r /requirements.txt
 
 # Create a directory for the application
-RUN mkdir /hey_tess 
+RUN mkdir /Angel 
 
 # Set the working directory
-WORKDIR /hey_tess 
+WORKDIR /Angel 
 
 # Copy the start script into the container
 COPY start.sh /start.sh
