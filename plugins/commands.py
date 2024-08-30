@@ -89,12 +89,12 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**You need to join my Channel in order to get the series files\n\nKindly Please join the 2 Channels below, & click the try again**",
+            text="**You need to join both Channels below in order to get the files\n\nonce you've joined both click on try again should be smooth sailing from here on out**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
         return
-    if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
+    if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "h
         buttons = [[
                     InlineKeyboardButton('♻️ HΞLᎮ', callback_data='help'),
                     InlineKeyboardButton('💫 ΛBԾUϮ', callback_data='about'),
