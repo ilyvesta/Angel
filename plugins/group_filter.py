@@ -85,7 +85,7 @@ async def next_page(bot, query):
     ]
     
     if settings.get('auto_delete', True):
-        btn.insert(0, [InlineKeyboardButton(text="CLICK HERE FOR OUR SERIES GROUP", url='https://t.me/RustCohle_CG')])
+        btn.insert(0, [InlineKeyboardButton(text="CLICK HERE FOR OUR SERIES GROUP", url='https://t.me/+gmfrzMuKiHNkODM0')])
     
     max_btn = settings.get('max_btn', True)
     max_b_tn_value = int(MAX_B_TN) if max_btn else 10
@@ -172,10 +172,10 @@ async def auto_filter(client, msg, spoll=False):
         ]
 
     try:
-        btn.insert(0, [InlineKeyboardButton(text="CLICK HERE FOR OUR SERIES GROUP", url='https://t.me/RustCohle_CG')])
+        btn.insert(0, [InlineKeyboardButton(text="CLICK HERE FOR OUR SERIES GROUP", url='https://t.me/+gmfrzMuKiHNkODM0')])
     except KeyError:
         await save_group_settings(message.chat.id, 'auto_delete', True)
-        btn.insert(0, [InlineKeyboardButton(text="CLICK HERE FOR OUR SERIES GROUP", url='https://t.me/RustCohle_CG')])
+        btn.insert(0, [InlineKeyboardButton(text="CLICK HERE FOR OUR SERIES GROUP", url='https://t.me/+gmfrzMuKiHNkODM0')])
 
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
