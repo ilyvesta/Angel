@@ -1,5 +1,5 @@
 # Use the official Python 3.10.9 slim-buster image
-FROM python:3.10.9-slim-buster
+FROM python:3.10.9-slim-bullseye
 
 # Update the package list and upgrade all packages
 RUN apt update && apt upgrade -y
